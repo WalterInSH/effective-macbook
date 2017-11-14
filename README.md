@@ -18,7 +18,7 @@ brew tap caskroom/cask
 
 ## Install neccessary command line tools
 
-* [oh-my-zsh](sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)")
+* [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 * [GNU coreutils](https://github.com/coreutils/coreutils)
 * [git](https://git-scm.com)
 * [openssl](https://openssl.org/)
