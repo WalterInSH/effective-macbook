@@ -108,3 +108,6 @@ brew cask install quicklook-json quicklook-csv
 
 * [marp](https://github.com/yhatt/marp)
 
+## Try something quickly 
+
+* [docker](https://www.docker.com/community-edition#/mac)
