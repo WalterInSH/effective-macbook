@@ -3,8 +3,8 @@ A list of effective ways to use a Macbook
 
 ## Manage your apps
 
-### [Homebrew](https://brew.sh/)
-### [Homebrew cask](https://caskroom.github.io/)
+* [Homebrew](https://brew.sh/)
+* [Homebrew cask](https://caskroom.github.io/)
 
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -35,6 +35,26 @@ brew tap caskroom/cask
 brew install coreutils git openssl tree autojump dos2unix parquet-tools libcouchbase proxychains-ng jenv httpie unrar
 ```
 
+## Use aliases when you can
+
+```
+alias ..='cd ..'
+alias ...='cd ../../'
+alias _='cd -'
+
+alias gitp='git pull --rebase'
+alias gitst='git status'
+alias gitcl='git clone'
+alias git1diff='git diff HEAD~1 HEAD'
+alias gitcmt='git commit'
+alias gitpo='git push origin'
+
+alias sha1='openssl sha1'
+alias sha256='openssl sha1 -a 256'
+```
+
+[A full verison](https://github.com/WalterInSH/dotfile/blob/master/MACOSX/bash_aliases)
+
 ## Nice HTTP API development tools
 
 * [postman](https://www.getpostman.com/)
@@ -47,3 +67,8 @@ brew install coreutils git openssl tree autojump dos2unix parquet-tools libcouch
 ```
 brew cask install quicklook-json quicklook-csv
 ```
+
+## Powerful mind mapping tools
+
+* [xmind](http://www.xmind.net/)
+
