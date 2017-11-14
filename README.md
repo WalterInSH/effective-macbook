@@ -13,8 +13,8 @@ brew tap caskroom/cask
 
 ## Use a more friendly command line
 
-### [Iterm2](https://www.iterm2.com/downloads.html)
-### [Iterm2 themes](https://github.com/mbadolato/iTerm2-Color-Schemes)
+* [Iterm2](https://www.iterm2.com/downloads.html)
+* [Iterm2 themes](https://github.com/mbadolato/iTerm2-Color-Schemes)
 
 ## Install neccessary command line tools
 
@@ -53,7 +53,23 @@ alias sha1='openssl sha1'
 alias sha256='openssl sha1 -a 256'
 ```
 
-[A full verison](https://github.com/WalterInSH/dotfile/blob/master/MACOSX/bash_aliases)
+[Full verison](https://github.com/WalterInSH/dotfile/blob/master/MACOSX/bash_aliases)
+
+## Handy script functions
+
+```
+mkdircd () {
+    mkdir -p "$@" && eval cd "\"\$$#\"";
+}
+
+ip2long(){
+    declare -i a b c d;
+    IFS=. read a b c d <<<"$1";
+    echo "$(((a<<24)+(b<<16)+(c<<8)+d))";
+}
+```
+
+[Full version](https://github.com/WalterInSH/dotfile/blob/master/MACOSX/bash_script)
 
 ## Nice HTTP API development tools
 
