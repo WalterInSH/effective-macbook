@@ -80,44 +80,26 @@ Host pro-machine
 ssh pro-machine
 # A badge added automatically
 ```
+## Command line tips
 
-## Use aliases when you can
+### Use aliases when you can
 
 ```
-alias ..='cd ..'
-alias ...='cd ../../'
-alias _='cd -'
-
-alias gitp='git pull --rebase'
-alias gitst='git status'
-alias gitcl='git clone'
-alias git1diff='git diff HEAD~1 HEAD'
-alias gitcmt='git commit'
-alias gitpo='git push origin'
-
 alias sha1='openssl sha1'
 alias sha256='openssl sha1 -a 256'
 ```
 
-[Full verison](https://github.com/WalterInSH/dotfile/blob/master/MACOSX/bash_aliases)
+[Example](https://github.com/WalterInSH/dotfile/blob/master/MACOSX/bash_aliases)
 
-## Handy script functions
+### Handy script functions
 
 ```
 mkdircd () {
     mkdir -p "$@" && eval cd "\"\$$#\"";
 }
-
-ip2long(){
-    declare -i a b c d;
-    IFS=. read a b c d <<<"$1";
-    echo "$(((a<<24)+(b<<16)+(c<<8)+d))";
-}
 ```
 
-[Full version](https://github.com/WalterInSH/dotfile/blob/master/MACOSX/bash_script)
-
-## Command line tips
+[Example](https://github.com/WalterInSH/dotfile/blob/master/MACOSX/bash_script)
 
 ### Copy text from command line
 
@@ -138,6 +120,29 @@ pbp|sed "s/./\U&/g"
 
 #eg. use pbc with pbp
 pbp|sed "s/./\U&/g"|pbc
+```
+
+### Use cd aliases
+
+```
+alias ..='cd ..'
+alias ...='cd ../../'
+alias _='cd -'
+```
+
+### Use autojump
+
+![](image/autojump.gif)
+
+### Use git aliases
+
+```
+alias gitp='git pull --rebase'
+alias gitst='git status'
+alias gitcl='git clone'
+alias git1diff='git diff HEAD~1 HEAD'
+alias gitcmt='git commit'
+alias gitpo='git push origin'
 ```
 
 ## Nice HTTP API development tools
