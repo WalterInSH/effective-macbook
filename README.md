@@ -44,7 +44,42 @@ brew install coreutils git openssl tree autojump dos2unix parquet-tools \
 
 ## Prevent running commands on an incorrent machine
 
+We may make mistakes by running commands on an incorrent machine. Especially when you work on a multi-tab window.
+
 ![iterm4panel](image/iterm4panels.jpg)
+
+1. Open iterm2's preference(⌘ + i)
+2. Add a badge, this would help you distinguish tabs
+
+![tabset](image/tabset.jpg)
+
+**Automatically add badges**
+
+Create a tabset config
+```
+#~/.tabset
+{
+  "colors": {
+    "pro": "red"
+  }
+}
+```
+
+Modify ssh config
+```
+#~/.ssh/config
+PermitLocalCommand yes
+
+Host pro-machine
+    hostname 10.1.1.1
+    user root
+    localcommand tabset pro
+```
+
+```
+ssh pro-machine
+# A badge added automatically
+```
 
 ## Use aliases when you can
 
