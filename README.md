@@ -86,6 +86,10 @@ ip2long(){
 
 * [charles](https://www.charlesproxy.com/)
 
+## Shadowsocks
+
+* [ShadowsocksX-NG](https://github.com/shadowsocks/ShadowsocksX-NG/releases/)
+
 ## Nice file preview tools
 
 * [quicklook-json](http://www.sagtau.com/quicklookjson.html)
