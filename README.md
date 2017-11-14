@@ -18,6 +18,7 @@ brew tap caskroom/cask
 
 ## Install neccessary command line tools
 
+* [oh-my-zsh](sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)")
 * [GNU coreutils](https://github.com/coreutils/coreutils)
 * [git](https://git-scm.com)
 * [openssl](https://openssl.org/)
@@ -30,9 +31,15 @@ brew tap caskroom/cask
 * [jenv](http://www.jenv.be)
 * [httpie](https://httpie.org/)
 * [unrar](https://www.rarlab.com/)
+* [the silver searcher](https://github.com/ggreer/the_silver_searcher)
+* [tabset](https://github.com/jonathaneunice/iterm2-tab-set)
+* [nmap](https://nmap.org/)
 
 ```
-brew install coreutils git openssl tree autojump dos2unix parquet-tools libcouchbase proxychains-ng jenv httpie unrar
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+brew install coreutils git openssl tree autojump dos2unix parquet-tools \
+  libcouchbase proxychains-ng jenv httpie unrar tabset the_silver_searcher \
+  nmap
 ```
 
 ## Use aliases when you can
@@ -97,6 +104,7 @@ brew cask install quicklook-json quicklook-csv
 * [截图Jietu](https://itunes.apple.com/cn/app/%E6%88%AA%E5%9B%BE-jietu-%E5%BF%AB%E9%80%9F%E6%A0%87%E6%B3%A8-%E4%BE%BF%E6%8D%B7%E5%88%86%E4%BA%AB%E7%9A%84%E6%88%AA%E5%B1%8F%E5%B7%A5%E5%85%B7/id1059334054?mt=12)
 * [LICEcap](https://www.cockos.com/licecap/)
 
-## Make a presentation
+## Make a presentation with markdown
 
 * [marp](https://github.com/yhatt/marp)
+
