@@ -42,6 +42,10 @@ brew install coreutils git openssl tree autojump dos2unix parquet-tools \
   nmap
 ```
 
+## Prevent running commands on an incorrent machine
+
+![iterm4panel](image/iterm4panels.jpg)
+
 ## Use aliases when you can
 
 ```
