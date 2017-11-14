@@ -78,6 +78,29 @@ ip2long(){
 
 [Full version](https://github.com/WalterInSH/dotfile/blob/master/MACOSX/bash_script)
 
+## Command line tips
+
+### Copy text from command line
+
+```
+alias pbc='pbcopy'
+
+#eg. copy current path
+pwd|pbc
+```
+
+### Edit copied text from command line
+
+```
+alias pbp='pbpaste'
+
+#eg. convert copied text to uppercase
+pbp|sed "s/./\U&/g"
+
+#eg. use pbc with pbp
+pbp|sed "s/./\U&/g"|pbc
+```
+
 ## Nice HTTP API development tools
 
 * [postman](https://www.getpostman.com/)
